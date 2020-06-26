@@ -1,0 +1,29 @@
+.caracteristicas {
+  padding: 60px 25px;
+  &__title {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  &__items {
+    @include flex(row, center, center);
+    & div,
+    & img {
+      padding: 20px;
+    }
+  }
+  &__image {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .caracteristicas {
+    padding: 0 100px;
+    &__title {
+      padding-bottom: 0;
+    }
+    &__items {
+      padding: 60px;
+    }
+  }
+}

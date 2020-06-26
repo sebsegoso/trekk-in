@@ -1,0 +1,43 @@
+.precios {
+  position: relative;
+  overflow: hidden;
+  &__container {
+    background-color: $onyx;
+  }
+  &__image-bg {
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+  }
+  &__title {
+    margin-top: 190px;
+    padding: 0 0 25px 0;
+    color: $white;
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 992px){
+  .precios{
+    &__title{
+      margin-top: 235px;
+    }
+  }
+}
+
+@media (min-width: 1200px){
+  .precios{
+    &__title{
+      margin-top: 310px;
+    }
+  }
+}
+
+@media (min-width: 1590px){
+  .precios{
+    &__title{
+      margin-top: 415px;
+    }
+  }
+}

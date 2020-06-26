@@ -1,0 +1,22 @@
+//This file you will create your base style inside of the project
+body{
+    font-family: $raleway;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrap{
+    padding: 0 25px;    
+}
+
+@media (min-width: 576px){
+    .wrap{
+        padding: 0 100px;
+    }
+}
+
+a{
+    color: $raisin-black;
+}

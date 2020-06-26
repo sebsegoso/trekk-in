@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sebastián Segura Osorio - Sebsegoso" />
+    <title>Trekk-in</title>
+    <!--GoogleFonts  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/Logo.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light wrap fixed-top">
+      <a class="navbar-brand" href="#"
+        ><img src="assets/images/Logo.svg" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor01"
+        aria-controls="navbarColor01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#caracteristicas">Características</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#precios">Precios</a>
+          </li>
+        </ul>
+        
+        <form class="form-inline text-center text-lg-left">
+          <a class="nav-link" href="#">Iniciar Sesión</a>
+          <button class="my-2 my-sm-0" type="submit">
+            Regístrate
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!-- HERO-SECTION -->
+    <main class="main">
+      <div class="main__title wrap">
+        <h1>Haz Trekking sin Parar</h1>
+        <p>
+          Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que
+          con unos simples pasos podrás definir la mejor ruta a tomar con tus
+          compañeros de expedición.
+        </p>
+      </div>
+      <img class="main__image-bg" src="assets/images/bg-hero.svg" alt="" />
+    </main>
+    <!-- Características -->
+    <section id="caracteristicas" class="caracteristicas wrap">
+      <h2 class="caracteristicas__title">Características</h2>
+      <div class="caracteristicas__items row justify-content-lg-center">
+        <img
+          src="assets/images/bar-graph.svg"
+          alt="Statistics graph"
+          class="caracteristicas__image col-12 col-lg"
+        />
+        <div class="caracteristicas__statistics col-12 col-lg">
+          <h3>Estadísticas de tu progreso</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+            quae, impedit doloribus suscipit voluptate fugiat cum qui atque
+            consequuntur. Voluptates maxime assumenda adipisci! Eum assumenda
+            voluptate eaque sapiente aliquid eveniet!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Precios -->
+    <section id="precios" class="precios">
+      <img class="precios__image-bg" src="assets/images/bg-price.svg" alt="" />
+      <div class="precios__container wrap">
+        <h2 class="precios__title">Precios</h2>
+        <div class="precios__cards row justify-content-lg-center">
+          <div class="precios__card col-12 col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card__title">Trekk-in Free</h3>
+                <h4 class="card__price">$ 0 / mes</h4>
+                <hr />
+                <ul class="card__list">
+                  <li class="card__list__item">
+                    Ver mapas creados por usuarios
+                  </li>
+                  <li class="card__list__item">Conectar con otros usuarios</li>
+                </ul>
+                <hr />
+                <button class="card__button" type="submit">
+                  Obtén Free
+                </button> 
+              </div>
+            </div>
+          </div>
+          <div class="precios__card col-12 col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card__title">Trekk-in Premium</h3>
+                <h4 class="card__price">$ 3500 / mes</h4>
+                <hr />
+                <ul class="card__list">
+                  <li class="card__list__item">
+                    Ver mapas creados por usuarios
+                  </li>
+                  <li class="card__list__item">Conectar con otros usuarios</li>
+                  <li class="card__list__item">Definir mejores rutas</li>
+                  <li class="card__list__item">Mapas Offline</li>
+                  <li class="card__list__item">
+                    Integración con otras aplicaciones
+                  </li>
+                </ul>
+                <hr />
+                <button class="card__button" type="submit">
+                  Obtén Premium
+                </button>               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer wrap">
+        <div class="footer__links">
+          <a href="">Legal</a>
+          <a href="">Cookies</a>
+          <a href="">Sobre anuncios</a>
+        </div>
+        <h6 class="footer__copyright">© 2018 Trekk-in SPA.</h6>
+    </footer>
+    <!-- Jquery-3.5.1 / Js poper 1.16 / Bootstrap Js-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

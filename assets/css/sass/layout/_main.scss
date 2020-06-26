@@ -1,0 +1,31 @@
+.main{
+    padding-top: 70px;
+    &__image-bg{
+        width: 100%;
+    }
+    &__title{
+        
+        h1{
+            padding: 40px 0 25px 0;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .main{
+        &__title{
+            position: absolute;
+            top: 53px;
+            width: 52%;
+        }
+    }
+}
+
+// @media (min-width: 1200px){
+//     .main{
+//         &__title{
+//             width:40%;
+//         }
+        
+//     }
+// }

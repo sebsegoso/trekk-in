@@ -1,0 +1,11 @@
+.navbar{
+    background-color: $white;
+    padding: 10px 20px;
+    box-shadow: 0 -15px 21px $raisin-black;
+}
+
+@media (min-width: 576px){
+    .navbar{
+    padding: 10px 100px;
+    }
+}

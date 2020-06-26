@@ -1,0 +1,21 @@
+.footer {
+  background-color: $raisin-black;
+  color: $white;
+  height: 110px;
+  text-align: center;
+  @include flex (column, space-evenly, center);
+  &__links{
+    width: 100%;
+    @include flex(row, space-around)
+  }
+}
+
+@media (min-width:992px){
+  .footer{
+    @include flex(row, space-between);
+    &__links{
+      width: 30%;
+      @include flex(row, space-between)
+    }
+  }
+}
