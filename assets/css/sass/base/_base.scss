@@ -8,15 +8,19 @@ img{
 }
 
 .wrap{
-    padding: 0 25px;    
+    padding: 0 1.5625rem;    
 }
 
 @media (min-width: 576px){
     .wrap{
-        padding: 0 100px;
+        padding: 0 6.25rem;
     }
 }
 
 a{
     color: $raisin-black;
+    transition: all .5s;
+    &:hover{
+        color: $ball-blue;
+    }
 }

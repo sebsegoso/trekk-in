@@ -1,27 +1,69 @@
 .precios__card {
-  padding: 25px;
+  padding: 1.5625rem;
 
   .card {
+    padding-bottom: 0.75rem;
+    transition: all .3s;
+    &:hover{
+      box-shadow: 0 0.625rem 0.625rem $raisin-black ;
+
+    }
     hr {
-      border-bottom: 1px solid $nickel;
+      border-bottom: 0.0625rem solid $nickel;
+    }
+    &__title, &__price{
+      padding: 0.3125rem 0;
+    }
+    &__title{
+      font-size: $large;
     }
     &__list {
       padding: 0 10%;
-      min-height: 150px;
       &__item {
-        padding: 5px 0;
+        font-size: $medium;
+        padding: 0.3125rem 0;
       }
     }
   }
 }
+@media (min-width: 576px){
+  .card{
+    min-width: 17.5rem;
+  }
+}
+
+@media (max-width: 767px){
+  .card{
+    &__list{
+      min-height: 11.25rem;      
+    }
+  }
+}
+
+
+@media (min-width: 768px){
+  .card{
+    &__list{
+      min-height: 15.125rem;      
+    }
+  }
+}
+
 
 @media (min-width: 992px) {
   .precios__card {
     .card {
-      width: 85%;
+      min-width: 18.125rem;
+      width: 75%;
       margin: 0 auto;
+      &__title{
+        font-size: $x-large;
+      }
+      &__price{
+        font-size: $x-large;
+      }
       &__list {
-        height: 250px;
+        height: 15.625rem;
       }
     }
   }

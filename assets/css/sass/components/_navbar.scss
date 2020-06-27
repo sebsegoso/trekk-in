@@ -1,11 +1,21 @@
-.navbar{
-    background-color: $white;
-    padding: 10px 20px;
-    box-shadow: 0 -15px 21px $raisin-black;
+.navbar {
+  background-color: $white;
+  padding: 0.625rem 1.5625rem;
+  box-shadow: 0 -0.9375rem 1.3125rem $raisin-black;
+  animation-name: navbar-mob;
+  animation-duration: 2s;
+  div {
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    animation-fill-mode: backwards;
+  }
 }
 
-@media (min-width: 576px){
-    .navbar{
-    padding: 10px 100px;
-    }
+@media (min-width: 576px) {
+  .navbar {
+    padding: 0.625rem 6.25rem;
+    animation-name: navbar-desk;
+    animation-duration: 2s;
+  }
 }

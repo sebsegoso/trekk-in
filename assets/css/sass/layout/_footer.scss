@@ -1,21 +1,30 @@
 .footer {
   background-color: $raisin-black;
   color: $white;
-  height: 110px;
+  font-size: $x-small;
+  height: 6.875rem;
   text-align: center;
-  @include flex (column, space-evenly, center);
-  &__links{
+  @include flex(column, space-evenly, center);
+  &__links {
     width: 100%;
-    @include flex(row, space-around)
+    @include flex(row, space-evenly) ;
+    a {
+      color: $white;
+      text-decoration: none;
+      &:hover{
+        color: $dark-salmon;
+      }
+    }
   }
 }
 
-@media (min-width:992px){
-  .footer{
+@media (min-width: 992px) {
+  .footer {
     @include flex(row, space-between);
-    &__links{
-      width: 30%;
-      @include flex(row, space-between)
+    font-size: $small;
+    &__links {
+      width: 27%;
+      @include flex(row, space-between);
     }
   }
 }

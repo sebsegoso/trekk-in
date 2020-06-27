@@ -1,4 +1,28 @@
 @charset "UTF-8";
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes navbar-mob {
+  from {
+    padding: 0 100px;
+  }
+  to {
+    padding: 10px 25px;
+  }
+}
+@keyframes navbar-desk {
+  from {
+    padding: 0 200px;
+  }
+  to {
+    padding: 10px 100px;
+  }
+}
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -4234,7 +4258,7 @@ input[type=button].btn-block {
   color: #221d23;
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: #726f73;
+  color: #2ab7ca;
 }
 .navbar-light .navbar-nav .nav-link.disabled {
   color: rgba(0, 0, 0, 0.3);
@@ -9924,16 +9948,20 @@ img {
 }
 
 .wrap {
-  padding: 0 25px;
+  padding: 0 1.5625rem;
 }
 
 @media (min-width: 576px) {
   .wrap {
-    padding: 0 100px;
+    padding: 0 6.25rem;
   }
 }
 a {
   color: #221d23;
+  transition: all 0.5s;
+}
+a:hover {
+  color: #2ab7ca;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -9945,36 +9973,73 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3.125em;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2.1875em;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 0.875em;
 }
 
 p {
   font-size: 1.25em;
+  font-family: "Open Sans", sans-serif;
 }
 
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3.125em;
+  }
+
+  h2 {
+    font-size: 2.8125em;
+  }
+}
 .main {
-  padding-top: 70px;
+  padding-top: 4.375rem;
 }
 .main__image-bg {
   width: 100%;
 }
+.main__title {
+  animation-name: fadein;
+  animation-duration: 2.7s;
+  animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  animation-fill-mode: backwards;
+}
 .main__title h1 {
-  padding: 40px 0 25px 0;
+  padding: 2.5rem 0 1.5625rem 0;
 }
 
 @media (min-width: 992px) {
   .main__title {
     position: absolute;
-    top: 53px;
+    top: 3.3125rem;
+    width: 66%;
+  }
+}
+@media (min-width: 1200px) {
+  .main__title {
     width: 52%;
   }
 }
 .caracteristicas {
-  padding: 60px 25px;
+  padding: 3.75rem 1.5625rem;
 }
 .caracteristicas__title {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
 }
 .caracteristicas__items {
   display: flex;
@@ -9983,21 +10048,29 @@ p {
   align-items: center;
 }
 .caracteristicas__items div, .caracteristicas__items img {
-  padding: 20px;
+  padding: 1.25rem;
 }
-.caracteristicas__image {
+.caracteristicas__img-container__image {
   width: 100%;
+  animation-name: fadein;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  animation-fill-mode: backwards;
+}
+.caracteristicas__statistics p {
+  font-size: 1.25em;
 }
 
 @media (min-width: 992px) {
   .caracteristicas {
-    padding: 0 100px;
+    padding: 0 6.25rem;
   }
   .caracteristicas__title {
     padding-bottom: 0;
   }
   .caracteristicas__items {
-    padding: 60px;
+    padding: 3.75rem;
   }
 }
 .precios {
@@ -10006,6 +10079,7 @@ p {
 }
 .precios__container {
   background-color: #333745;
+  padding-bottom: 3.125rem;
 }
 .precios__image-bg {
   z-index: -1;
@@ -10014,7 +10088,7 @@ p {
 }
 .precios__title {
   margin-top: 190px;
-  padding: 0 0 25px 0;
+  padding: 0 0 1.5625rem 0;
   color: #FFF;
   text-align: center;
 }
@@ -10037,7 +10111,8 @@ p {
 .footer {
   background-color: #221d23;
   color: #FFF;
-  height: 110px;
+  font-size: 0.75em;
+  height: 6.875rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -10048,8 +10123,15 @@ p {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+}
+.footer__links a {
+  color: #FFF;
+  text-decoration: none;
+}
+.footer__links a:hover {
+  color: #ee9480;
 }
 
 @media (min-width: 992px) {
@@ -10058,9 +10140,10 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.875em;
   }
   .footer__links {
-    width: 30%;
+    width: 27%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -10069,42 +10152,89 @@ p {
 }
 .navbar {
   background-color: #FFF;
-  padding: 10px 20px;
-  box-shadow: 0 -15px 21px #221d23;
+  padding: 0.625rem 1.5625rem;
+  box-shadow: 0 -0.9375rem 1.3125rem #221d23;
+  animation-name: navbar-mob;
+  animation-duration: 2s;
+}
+.navbar div {
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  animation-fill-mode: backwards;
 }
 
 @media (min-width: 576px) {
   .navbar {
-    padding: 10px 100px;
+    padding: 0.625rem 6.25rem;
+    animation-name: navbar-desk;
+    animation-duration: 2s;
   }
 }
 .precios__card {
-  padding: 25px;
+  padding: 1.5625rem;
+}
+.precios__card .card {
+  padding-bottom: 0.75rem;
+  transition: all 0.3s;
+}
+.precios__card .card:hover {
+  box-shadow: 0 0.625rem 0.625rem #221d23;
 }
 .precios__card .card hr {
-  border-bottom: 1px solid #726f73;
+  border-bottom: 0.0625rem solid #726f73;
+}
+.precios__card .card__title, .precios__card .card__price {
+  padding: 0.3125rem 0;
+}
+.precios__card .card__title {
+  font-size: 1.25em;
 }
 .precios__card .card__list {
   padding: 0 10%;
-  min-height: 150px;
 }
 .precios__card .card__list__item {
-  padding: 5px 0;
+  font-size: 1em;
+  padding: 0.3125rem 0;
 }
 
+@media (min-width: 576px) {
+  .card {
+    min-width: 17.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .card__list {
+    min-height: 11.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .card__list {
+    min-height: 15.125rem;
+  }
+}
 @media (min-width: 992px) {
   .precios__card .card {
-    width: 85%;
+    min-width: 18.125rem;
+    width: 75%;
     margin: 0 auto;
   }
+  .precios__card .card__title {
+    font-size: 1.875em;
+  }
+  .precios__card .card__price {
+    font-size: 1.875em;
+  }
   .precios__card .card__list {
-    height: 250px;
+    height: 15.625rem;
   }
 }
 button {
   border: 0;
   background-color: #2ab7ca;
   color: #FFF;
+  font-weight: 700;
+  transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 button:hover {
   background-color: #b1e4eb;
@@ -10114,12 +10244,12 @@ button:focus {
 }
 
 nav div form button {
-  padding: 5px;
+  padding: 0.3125rem;
 }
 
 .card__button {
   width: 100%;
-  height: 35px;
+  height: 2.1875rem;
 }
 
 /*# sourceMappingURL=style.css.map */

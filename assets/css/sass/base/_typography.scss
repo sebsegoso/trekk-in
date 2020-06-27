@@ -5,11 +5,37 @@ h1,h2,h3,h4,h5,h6,p{
 h1,h2,h3{
     font-weight: $bold-700;
 }
-//Hero-section
+
 h1{
-    font-size: $xxxxx-large ;
+    font-size: $xxx-large ;
+}
+
+h2{
+    font-size: $xx-large;
+}
+
+h3{
+    font-weight: $regular-400;
+}
+
+h4{
+    font-weight: $bold-700;
+}
+
+h6{
+    font-size: $small;
 }
 
 p{
     font-size: $large;
+    font-family: $open-sans;
+}
+
+@media (min-width: 992px){
+    h1{
+        font-size: $xxxxx-large ;
+    }
+    h2{
+        font-size: $xxxx-large;
+    }
 }

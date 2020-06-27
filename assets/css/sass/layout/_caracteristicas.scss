@@ -1,29 +1,41 @@
 .caracteristicas {
-  padding: 60px 25px;
+  padding: 3.75rem 1.5625rem;
   &__title {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
   }
   &__items {
     @include flex(row, center, center);
     & div,
     & img {
-      padding: 20px;
+      padding: 1.25rem;
     }
   }
-  &__image {
-    width: 100%;
+  &__img-container {
+    &__image {
+      width: 100%;
+      animation-name: fadein;
+      animation-duration: 4s;
+      animation-delay: 2s;
+      animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+      animation-fill-mode: backwards;
+    }
+  }
+  &__statistics{
+    p{
+      font-size: $large;
+    }
   }
 }
 
 @media (min-width: 992px) {
   .caracteristicas {
-    padding: 0 100px;
+    padding: 0 6.25rem;
     &__title {
       padding-bottom: 0;
     }
     &__items {
-      padding: 60px;
+      padding: 3.75rem;
     }
   }
 }
