@@ -3,9 +3,12 @@
 
   .card {
     padding-bottom: 0.75rem;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
     &:hover{
-      box-shadow: 0 0.625rem 0.625rem $raisin-black ;
+      -webkit-box-shadow: 0 0.625rem 0.625rem $raisin-black ;
+              box-shadow: 0 0.625rem 0.625rem $raisin-black ;
 
     }
     hr {

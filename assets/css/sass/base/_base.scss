@@ -19,6 +19,8 @@ img{
 
 a{
     color: $raisin-black;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
     &:hover{
         color: $ball-blue;

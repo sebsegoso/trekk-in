@@ -7,11 +7,11 @@
   @include flex(column, space-evenly, center);
   &__links {
     width: 100%;
-    @include flex(row, space-evenly) ;
+    @include flex(row, space-evenly);
     a {
       color: $white;
       text-decoration: none;
-      &:hover{
+      &:hover {
         color: $dark-salmon;
       }
     }

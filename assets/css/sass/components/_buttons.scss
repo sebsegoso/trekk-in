@@ -3,12 +3,21 @@ button{
     background-color: $ball-blue;
     color: $white;
     font-weight: $bold-700;
+    -webkit-transition: all .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -o-transition: all .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
     transition: all .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
     &:hover{
         background-color: $blue-lagoon;
+        -webkit-box-shadow: 0 0.125rem 0.3125rem $ball-blue;
+                box-shadow: 0 0.125rem 0.3125rem $ball-blue;
     }
     &:focus{
        background-color: $lavender-gray;
+       -webkit-box-shadow: 0 0.125rem 0.3125rem $nickel inset;
+               box-shadow: 0 0.125rem 0.3125rem $nickel inset;
     }
 }
 

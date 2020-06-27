@@ -1,21 +1,41 @@
 .navbar {
   background-color: $white;
   padding: 0.625rem 1.5625rem;
-  box-shadow: 0 -0.9375rem 1.3125rem $raisin-black;
-  animation-name: navbar-mob;
-  animation-duration: 2s;
+  -webkit-box-shadow: 0 -0.9375rem 1.3125rem $raisin-black;
+          box-shadow: 0 -0.9375rem 1.3125rem $raisin-black;
+  -webkit-animation-name: navbar-sm;
+          animation-name: navbar-sm;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   div {
-    animation-name: fadein;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
-    animation-fill-mode: backwards;
+    @include navbar-fadein (1s);
+    .nav-item:nth-of-type(1){
+      @include navbar-fadein (1.5s);
+    }
+    .nav-item:nth-of-type(2){
+      @include navbar-fadein (2s);
+    }
+    .nav-item:nth-of-type(3){
+      @include navbar-fadein (2.5s);
+    }
   }
 }
 
 @media (min-width: 576px) {
   .navbar {
     padding: 0.625rem 6.25rem;
-    animation-name: navbar-desk;
-    animation-duration: 2s;
+    -webkit-animation-name: navbar-md;
+            animation-name: navbar-md;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    -webkit-animation-name: navbar-lg;
+            animation-name: navbar-lg;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
   }
 }

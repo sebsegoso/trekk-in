@@ -4,10 +4,7 @@
     width: 100%;
   }
   &__title {
-    animation-name: fadein;
-    animation-duration: 2.7s;
-    animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
-    animation-fill-mode: backwards;
+    @include navbar-fadein (3s);
 
     h1 {
       padding: 2.5rem 0 1.5625rem 0;
@@ -32,3 +29,4 @@
     }
   }
 }
+

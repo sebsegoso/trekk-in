@@ -1,6 +1,26 @@
 @mixin flex ($flex-dir:row, $justi-cont:center, $ali-itms:center){ 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    flex-direction: $flex-dir;
-    justify-content: $justi-cont;
-    align-items: $ali-itms;    
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: $flex-dir;
+            flex-direction: $flex-dir;
+    -webkit-box-pack: $justi-cont;
+        -ms-flex-pack: $justi-cont;
+            justify-content: $justi-cont;
+    -webkit-box-align: $ali-itms;
+        -ms-flex-align: $ali-itms;
+            align-items: $ali-itms;    
+}
+
+@mixin navbar-fadein ($time) {
+    -webkit-animation-name: fadein;
+            animation-name: fadein;
+    -webkit-animation-duration: $time;
+            animation-duration: $time;
+    -webkit-animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;    
 }
