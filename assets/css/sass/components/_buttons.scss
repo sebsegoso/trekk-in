@@ -11,8 +11,8 @@ button{
     transition: all .3s;
     &:hover{
         background-color: $blue-lagoon;
-        -webkit-box-shadow: 0 0.125rem 0.3125rem $ball-blue;
-                box-shadow: 0 0.125rem 0.3125rem $ball-blue;
+        -webkit-box-shadow: 0 0.125rem 0.3125rem $blue-lagoon;
+                box-shadow: 0 0.125rem 0.3125rem $blue-lagoon;
     }
     &:focus{
        background-color: $lavender-gray;

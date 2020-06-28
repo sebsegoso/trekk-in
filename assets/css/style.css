@@ -10390,8 +10390,8 @@ button {
 }
 button:hover {
   background-color: #b1e4eb;
-  -webkit-box-shadow: 0 0.125rem 0.3125rem #2ab7ca;
-  box-shadow: 0 0.125rem 0.3125rem #2ab7ca;
+  -webkit-box-shadow: 0 0.125rem 0.3125rem #b1e4eb;
+  box-shadow: 0 0.125rem 0.3125rem #b1e4eb;
 }
 button:focus {
   background-color: #c7c8cc;
